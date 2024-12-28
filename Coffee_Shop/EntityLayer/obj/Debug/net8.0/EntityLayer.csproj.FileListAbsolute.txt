@@ -1,0 +1,11 @@
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\bin\Debug\net8.0\EntityLayer.deps.json
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\bin\Debug\net8.0\EntityLayer.dll
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\bin\Debug\net8.0\EntityLayer.pdb
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\EntityLayer.AssemblyInfo.cs
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\EntityLayer.dll
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\refint\EntityLayer.dll
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\EntityLayer.pdb
+C:\Coffee_Shop\Coffee_Shop\EntityLayer\obj\Debug\net8.0\ref\EntityLayer.dll

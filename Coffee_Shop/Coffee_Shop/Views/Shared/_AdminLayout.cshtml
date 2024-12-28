@@ -1,0 +1,125 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MyCoffe</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        position: relative;
+        height: 100vh;
+    }
+
+    .background-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* This places the image behind other content */
+    }
+
+    .coffee-logo {
+        width: 80px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 100px;
+        float: left;
+    }
+
+    .navbar ul {
+        display: inline-block;
+        margin-top: 40px;
+        margin-left: 300px;
+    }
+
+        .navbar ul li {
+            list-style: none;
+            display: inline-block;
+            /* float:left; */
+            margin-right: 20px;
+        }
+
+            .navbar ul li a {
+                font-weight: bold;
+                padding: 13px 30px;
+                border-radius: 30px;
+                background: #552f0a;
+                color: white;
+                font-size: 13px;
+                font-family: Roboto;
+                text-decoration: none;
+                font-weight: bolder;
+            }
+
+                .navbar ul li a:hover {
+                    text-decoration: underline;
+                    color: black;
+                    cursor: pointer;
+                    border: 7px solid #552f0a;
+                }
+
+
+
+    .icon {
+        float: right;
+        margin-top: 40px;
+        margin-right: 100px;
+    }
+
+    i {
+        color: white;
+        font-size: 20px;
+        margin-right: 13px;
+    }
+</style>
+<body>
+    <div>
+        <img class="background-image" src="~/image/coffee.jpg" alt="Coffee Image">
+        <div class="navbar">
+            <div class="logo">
+                <img src="~/image/about_logo.png" style="width:100px; height:100px; margin-left:49px; margin-top:38px;">
+            </div>
+            <ul>
+                  <li><a asp-action="Index" asp-controller="Home">Home</a></li> 
+                  <li><a asp-action="Index" asp-controller="About">About</a></li> 
+                  <li><a asp-action="Index" asp-controller="CoffeeMenu">Menu</a></li>
+                  <li><a asp-action="Index" asp-controller="Register">Sign Up</a></li>
+                 <li><a asp-action="Index" asp-controller="Login">Sign In</a></li>
+                <li><a asp-action="OrderIndex" asp-controller="Admin">Orders</a></li>
+                <li><a asp-action="Logout" asp-controller="Login">Sign Out</a></li>
+            </ul>
+               <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a asp-action="OrderIndex" asp-controller="Admin"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            </div>
+
+        </div>
+
+
+        <div class="render">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,17 @@
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\bin\Debug\net8.0\BusinessLayer.deps.json
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\bin\Debug\net8.0\BusinessLayer.dll
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\bin\Debug\net8.0\BusinessLayer.pdb
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\bin\Debug\net8.0\EntityLayer.dll
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\bin\Debug\net8.0\EntityLayer.pdb
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfoInputs.cache
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.AssemblyInfo.cs
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.CopyComplete
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.dll
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
+C:\Coffee_Shop\Coffee_Shop\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll

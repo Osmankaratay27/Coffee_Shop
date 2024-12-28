@@ -1,0 +1,127 @@
+﻿@model EntityLayer.Concrete.Register
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<style>
+    body {
+        background-color: #f8f3e9; 
+        font-family: 'Arial', sans-serif; 
+    }
+
+    .login {
+        width: 50%;
+        min-width: 300px;
+        max-width: 800px;
+        padding: 2rem;
+        margin: 2rem auto;
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+        background: linear-gradient(to bottom, #fffdf5, #f2ebe3); 
+        position: relative;
+    }
+
+    .form-title {
+        position: absolute;
+        top: -1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #f8f3e9;
+        padding: 0.5rem 1.5rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #6b4f39; 
+        border-radius: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+
+
+    .form-row label {
+        font-weight: bold;
+        color: #6b4f39; 
+    }
+
+    .form-control {
+        border: 2px solid #d6b38c;
+        border-radius: 8px;
+        padding: 0.6rem;
+    }
+
+        .form-control:focus {
+            border-color: #a47449; 
+            box-shadow: 0 0 5px rgba(164, 116, 73, 0.5);
+        }
+
+    .btn-primary {
+        background-color: #a47449; 
+        border: none;
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 25px;
+        color: white;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #6b4f39; 
+            cursor: pointer;
+        }
+
+    #btn1 {
+        color: #6b4f39;
+        text-decoration: none;
+    }
+
+        #btn1:hover {
+            text-decoration: underline;
+        }
+
+</style>
+
+
+<section class="main-content-w3layouts-agileits">
+    <div class="container">
+        <div class="inner-sec">
+            <div class="login">
+                <h2 class="form-title">Sign Up</h2>
+                @using (Html.BeginForm("Index", "Register", FormMethod.Post))
+                {
+                    <div class="form-row">
+                        <label for="validationCustom01">Name-Surname</label>
+                        @Html.TextBoxFor(x => x.UserName, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.UserName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-row">
+                        <label for="validationCustom02">Mail Address</label>
+                        @Html.TextBoxFor(x => x.UserMail, new { @class = "form-control" })
+                        @Html.ValidationMessageFor(x => x.UserMail, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="form-row">
+                        <label for="exampleInputPassword1 mb-2">Password</label>
+                        <input type="password" class="form-control" id="password1" name="UserPassword" placeholder="">
+                        @Html.ValidationMessageFor(x => x.UserPassword, "", new { @class = "text-danger" })
+                        <br />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit mb-4">Sign Up</button>
+                    <p>
+                        <a href="#" id="btn1">I have read and accept all terms.</a>
+                    </p>
+                }
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $('#btn1').click(function () {
+            swal("Site Acceptance Conditions", "Information and news e-mails will continue to be sent via the e-mail address you provide on our site, without reaching the level of spam.If you want to unsubscribe from the e-mail newsletter, you can stop the e-mail message. Your password and e-mail addresses are stored in our databases in an encrypted format so that no user can see them.");
+        });
+    </script>
+</section>
