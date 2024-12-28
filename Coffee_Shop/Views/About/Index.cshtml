@@ -1,0 +1,49 @@
+﻿
+
+@{
+    ViewData["Title"] = "About";
+}
+
+<div class="welcome-container text-center">
+    <h1 class="display-4 mt-5">About Us</h1>
+    <p class="lead mt-3">
+        Welcome to Coffee Shop, where passion infuses every cup.
+        Our carefully curated coffee beans, sourced globally, promise a
+        distinctive experience. Explore our online store for premium blends, each crafted with dedication.
+        Elevate your coffee journey with us – a haven for enthusiasts seeking quality and flavor.
+    </p>
+    <a asp-action="Index" asp-controller="Home" class="btn btn-dark btn-lg mt-4">Go Home</a>
+</div>
+
+<style>
+    .welcome-container {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 40px;
+        border-radius: 12px;
+        max-width: 600px;
+        margin: 100px auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+        .welcome-container h1 {
+            color: #552f0a;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+        }
+
+        .welcome-container p {
+            color: #6c757d;
+        }
+
+        .welcome-container .btn {
+            background-color: #552f0a;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+            .welcome-container .btn:hover {
+                background-color: #6c4311;
+            }
+</style>

@@ -1,0 +1,113 @@
+﻿@model EntityLayer.Concrete.CoffeeMenu
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+        }
+
+        .inputBox {
+            margin-bottom: 15px;
+        }
+
+            .inputBox label {
+                display: block;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .inputBox input,
+            .inputBox select {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-size: 14px;
+            }
+
+                .inputBox input:focus,
+                .inputBox select:focus {
+                    border-color: #000;
+                }
+
+        .submit_btn {
+            width: 100%;
+            padding: 12px;
+            background: rgb(1, 143, 34);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+
+            .submit_btn:hover {
+                background: #3d17fb;
+            }
+
+        input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        @using (Html.BeginForm("Add", "CoffeeMenu", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div class="inputBox">
+                <label for="cardName">Coffee Name:</label>
+                <input type="text" id="CoffeeMenuName" name="CoffeeMenuName" placeholder="Enter Coffee name">
+                @Html.ValidationMessageFor(x => x.CoffeeMenuName, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="inputBox">
+                <label for="cardNumber">Coffee Price:</label>
+                <input type="text" id="CoffeeMenuPrice" name="CoffeeMenuPrice" placeholder="00.00 $">
+                @Html.ValidationMessageFor(x => x.CoffeeMenuPrice, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="inputBox">
+                <label for="cardName">Coffee Description:</label>
+                <input type="text" id="CoffeeMenuDescription" name="CoffeeMenuDescription" placeholder="Enter Coffee Description">
+                @Html.ValidationMessageFor(x => x.CoffeeMenuDescription, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="inputBox">
+                <label for="CoffeeImage">Coffee Image:</label>
+                <input type="file" id="CoffeeMenuUrl" name="CoffeeMenuUrl" accept="image/*">
+           
+            </div>
+
+            <button type="submit" class="submit_btn">Save</button>
+        }
+    </div>
+</body>
+
+</html>
